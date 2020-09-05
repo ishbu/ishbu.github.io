@@ -11,11 +11,7 @@
       cursor.classList.remove('hidden')
       cursor.classList.add('blink')
 
-    item.onmouseout = (e) ->
-      toEl = e.toElement
-      while toEl?.parentNode
-        return if toEl.className == 'link-item'
-        toEl = toEl.parentNode
+    item.onmouseleave = (e) ->
       headline.innerHTML = 'Internet Enthusiast'
       cursor.classList.add('hidden')
       cursor.classList.remove('blink')

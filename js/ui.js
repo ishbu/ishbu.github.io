@@ -18,15 +18,7 @@
       cursor.classList.remove('hidden');
       return cursor.classList.add('blink');
     };
-    item.onmouseout = function(e) {
-      var toEl;
-      toEl = e.toElement;
-      while (toEl != null ? toEl.parentNode : void 0) {
-        if (toEl.className === 'link-item') {
-          return;
-        }
-        toEl = toEl.parentNode;
-      }
+    item.onmouseleave = function(e) {
       headline.innerHTML = 'Internet Enthusiast';
       cursor.classList.add('hidden');
       return cursor.classList.remove('blink');
