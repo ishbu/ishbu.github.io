@@ -3,8 +3,13 @@
   src: url('../font/Dezen_Pro_Regular.otf');
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
   background: #F5F5F5;
+  font-family: dezenPro;
 }
 
 ul, li {
@@ -21,21 +26,17 @@ ul, li {
 
 .name-title {
   font-family: dezenPro;
-  font-size: 72px;
-  letter-spacing: 8px;
+  font-size: 4.5rem;
+  letter-spacing: 0.5rem;
   font-weight: normal;
   text-align: center;
-  margin-top: 160px;
+  margin-top: 10rem;
   margin-bottom: 0px;
 }
 
-.side-column {
-  /*background: #CCC;*/
-}
-
 ul.links {
-  margin-top: 16px;
-  padding-left: 0px;
+  margin-top: 1rem;
+  padding-left: 0;
   text-align: center;
   font-size: 0;
 }
@@ -44,7 +45,7 @@ ul.links {
   display: inline-block;
   width: 40px;
   height: 40px;
-  padding: 16px;
+  padding: 1rem;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -63,15 +64,14 @@ ul.links {
 
 h2.url-display {
   text-align: center;
-  font-family: dezenPro;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: normal;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
 }
 
 span.cursor {
-  width: 2px;
+  width: 0.125rem;
   height: 0.9em;
   background: black;
   display: inline-block;
